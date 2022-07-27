@@ -38,7 +38,7 @@ const data = await d3.csv('https://raw.githubusercontent.com/jpslane/narrative-v
       
     // Add Y axis
     var y = d3.scaleLinear()
-      .domain([0, d3.max(data, function(d) { return +d.       value; })])
+      .domain([8, d3.max(data, function(d) { return +d.       value; })])
       .range([ height, 0 ]);
     svg.append("g")
       .attr('transform', 'translate('+0+','+margin.top       +')')
