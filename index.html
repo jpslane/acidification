@@ -6,7 +6,7 @@
   </H2>
   <P style="padding: 10px; border: 2px solid black;">This graph shows the acidification of the global mean sea water, a result stemming largely from CO2 emissions. This leads to the death of oyster larvae by the billions. The NOAA Pacific Marine Environmental Labratory states that larvae production in the Northwest plummeted by as much as 80 percent between 2005 and 2009 as a result of ocean acidification.</P>
   <script src='https://d3js.org/d3.v5.min.js'></script>
-  <div id="my_dataviz"></div>
+  <div id="vis"></div>
 
   <body onload='init()'>
     <script>
@@ -22,7 +22,7 @@
           height = 700 - margin.top - margin.bottom;
 
         // append the svg object to the body of the page
-        var svg = d3.select("#my_dataviz")
+        var svg = d3.select("#vis")
           .append("svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
